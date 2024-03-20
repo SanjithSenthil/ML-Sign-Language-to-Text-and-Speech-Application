@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="icon" href="./logo.ico">
+    <title>ML Sign Language to Text and Speech Application</title>
+</head>
+<body id="content">
+    <header class="darkmode-ignore">
+        <nav>
+            <div class="logo">
+              <img src="logo.png" id="logo" height="50" width="50">
+              <span class="logo-text">ML Sign Language to Text and Speech Application</span>
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#Team">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br><br><br><br><br><br>
+
+    <section id="Home" id="hero" class="hero">
+      <div class="content">
+         <span id="element"></span>
+          <p id="subhead">Good communication is the bridge between confusion and clarity </p>
+          
+          
+          <p id="hero-content">The application has been developed to interpret American sign language (ASL), converting them to text and speech across five popular languages. This functionality serves to enhance communication for individuals with speech impairments and deafness. In addition, this innovation not only improves communication for ASL users but also offers them the chance to delve into and expand their understanding of the sign language. The supported languages include English, French, Chinese (Mandarin), Spanish, and Japanese.</p>
+
+          <form action="/run" method="GET" id="form">
+            <select name="language" id="dd">
+              <option value="english">English</option>
+              <option value="french">French</option>
+              <option value="chinese">Chinese (Mandarin)</option>
+              <option value="spanish">Spanish</option>
+              <option value="japanese">Japanese</option>
+            </select>
+            <button type="submit" class="cta-button" id="cta-button">Get Started</button>
+          </form>
+      </div>
+  </section>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Hey there,', 'Welcome to The Future!'],
+        typeSpeed: 50,
+      });
+
+      
+    </script>
+    <script src="app.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <!-- Add your CSS styles here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .result-container {
+            max-width: 600px;
+            margin: 220px auto 50px; /* Adjusted margin-top to move the container down */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2626b5;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h2 id="result-text">Result is:</h2>
+        <button class="cta-button" onclick="window.history.back()">Go Back</button>
+
+    </div>
+    <script>
+        // Extract translated text from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const translatedText = urlParams.get('text');
+
+        // Display the translated text on the page
+        document.getElementById('result-text').innerText = translatedText;
+    </script>
+</body>
+</html>

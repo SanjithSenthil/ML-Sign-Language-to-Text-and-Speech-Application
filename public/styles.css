@@ -1,0 +1,249 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto; /* Add margin from left and right */
+  padding: 0;
+  box-sizing: border-box;
+  background-color:   #ffffff;
+}
+
+header {
+  color: #000000;
+  width: 100%;
+  position:fixed;
+  z-index: 10;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: white;
+}
+
+#logo{
+  margin-left: 20px;
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  
+}
+
+li {
+  margin: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  color: #000; 
+  text-align: center;
+  padding: 52px;
+}
+
+.content {
+  display: inline;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3em 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+/* Your existing styles remain unchanged */
+
+#hero {
+  position: relative;
+}
+
+.hero p{
+  line-height:1.5em;
+  font-weight:500;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: larger;
+  
+}
+
+.text{
+  color: #000000;
+}
+#element{
+  color: #000000;
+  font-size: 60pt;
+  font-weight: bold;
+  margin-top: 500px;
+}
+
+#subhead{
+  color: #000000;
+  font-size: 20pt;
+  font-weight: 800;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 18px;
+  color: #333;
+}
+
+#particles-js{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer{
+  margin-bottom: 0;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  flex-basis: 50%;
+}
+
+.image>img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  
+}
+
+.text {
+  flex-basis: 50%;
+  padding: 0 2em;
+  line-height: 1.5;
+}
+
+.section{
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.team {
+  text-align: center;
+  margin-top: 120px;
+
+}
+
+.team-member {
+  display: inline-block;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.team-photo {
+  border-radius: 80%;
+  width: 180px;
+  height: 180px;
+  border: 2px solid #000;
+  object-fit:cover;
+}
+
+.darkmode--activated #element {
+  color: #ffffff; /* Change the color to your desired color */
+}
+
+.darkmode--activated #subhead {
+  color: #ffffff; /* Change the color to your desired color */
+}
+
+.darkmode--activated #hero-content {
+  color: #ffffff; /* Change the color to your desired color */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  margin-left: 10px; 
+  font-size:xx-large;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* Style for the custom dropdown container */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dropdown arrow */
+.custom-dropdown::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #333; /* Adjust the color as needed */
+}
+
+/* Style for the select dropdown */
+#dd {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Adjust the border color as needed */
+  border-radius: 5px;
+  background-color: #fff; /* Adjust the background color as needed */
+  width: 200px; /* Adjust the width as needed */
+}
+
+/* Style for select options */
+#dd option {
+  padding: 10px;
+}
+
+/* Style for the button */
+.cta-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2626b5; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+  background-color: #2626b5; /* Adjust the hover background color as needed */
+}
+
